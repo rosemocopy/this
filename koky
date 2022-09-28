@@ -3580,7 +3580,7 @@ task.spawn(function()
                         api.tween(0.1, player.SpawnPos.Value * CFrame.fromEulerAnglesXYZ(0, 110, 0) + Vector3.new(0, 0, 9))
                         temptable.converting = true
                         repeat converthoney() until player.CoreStats.Pollen.Value == 0
-                        if kocmoc.toggles.convertballoons and kocmoc.vars.convertballoonpercent == 0 and gethiveballoon() then
+                        if kocmoc.toggles.convertballoons and kocmoc.vars.convertballoonpercent ~= 0 and gethiveballoon() then
                             task.wait(6)
                             repeat
                                 task.wait()
